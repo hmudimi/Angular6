@@ -44,4 +44,12 @@ export class ParticularEmployeeDetailComponent implements OnInit {
     this.router.navigate(['employeeslist',{id: selectedId}])
   }
 
+  showOverview() {
+    this.router.navigate(['overview'], {relativeTo: this.route});
+  }
+
+  showContact() {
+    this.router.navigate(['contact'], {relativeTo: this.route});
+  }
+
 }

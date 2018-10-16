@@ -9,6 +9,8 @@ import { EmployeeService } from './employee.service';
 import { AppRoutingModule, routingComponents } from './app.routing-module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParticularEmployeeDetailComponent } from './particular-employee-detail/particular-employee-detail.component';
+import { EmployeeOverviewComponent } from './employee-overview/employee-overview.component';
+import { EmployeeContactComponent } from './employee-contact/employee-contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ParticularEmployeeDetailComponent } from './particular-employee-detail/
     TestComponent,
     routingComponents,
     PageNotFoundComponent,
-    ParticularEmployeeDetailComponent
+    ParticularEmployeeDetailComponent,
+    EmployeeOverviewComponent,
+    EmployeeContactComponent
   ],
   imports: [
     BrowserModule,
