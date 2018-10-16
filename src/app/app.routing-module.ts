@@ -5,9 +5,14 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
+    //default path
     {path: '', redirectTo: '/employeeslist', pathMatch: 'full'},
+
+    //other paths
     {path: 'employeeslist', component: EmployeeListComponent},
     {path: 'employeedetail', component: EmployeeDetailComponent},
+    
+    //If path doesn't exist
     {path: "**", component: PageNotFoundComponent}
 ];
 
