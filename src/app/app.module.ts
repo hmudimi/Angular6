@@ -8,13 +8,15 @@ import { TestComponent } from './test/test.component';
 import { EmployeeService } from './employee.service';
 import { AppRoutingModule, routingComponents } from './app.routing-module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ParticularEmployeeDetailComponent } from './particular-employee-detail/particular-employee-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     routingComponents,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ParticularEmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
