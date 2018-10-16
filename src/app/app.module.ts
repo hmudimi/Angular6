@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { EmployeeService } from './employee.service';
 import { AppRoutingModule, routingComponents } from './app.routing-module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    routingComponents
+    routingComponents,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
