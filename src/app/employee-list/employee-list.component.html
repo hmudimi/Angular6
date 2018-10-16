@@ -1,4 +1,4 @@
   <h3>{{errorMsg}}</h3>
   <ul *ngFor = "let employee of employees">
-    <span (click)="onSelect(employee)" class="onHover">{{employee.id}} &nbsp; {{employee.name}}</span>
+    <span (click)="onSelect(employee)" [class.selected]="isSelected(employee)" class="listItems">{{employee.id}} &nbsp; {{employee.name}}</span>
   </ul>

@@ -26,7 +26,7 @@ export class ParticularEmployeeDetailComponent implements OnInit {
     this.route.paramMap.subscribe((params: ParamMap) => {
       let id = parseInt(params.get('id'));
       this.employeeId = id;
-    })
+    });
   }
 
   goPrevious() {
@@ -37,6 +37,11 @@ export class ParticularEmployeeDetailComponent implements OnInit {
   goNext() {
     let nextId = this.employeeId + 1;
     this.router.navigate(['/employeedetail', nextId])
+  }
+
+  goToEmployeesList() {
+    let selectedId = this.employeeId ? this.employeeId : null;
+    this.router.navigate(['employeeslist',{id: selectedId}])
   }
 
 }
