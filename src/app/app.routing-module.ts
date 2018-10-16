@@ -7,12 +7,12 @@ import { ParticularEmployeeDetailComponent } from './particular-employee-detail/
 
 const routes: Routes = [
     //default path
-    {path: '', redirectTo: '/employeeslist', pathMatch: 'full'},
+    {path: '', redirectTo: '/employee-list', pathMatch: 'full'},
 
     //other paths
-    {path: 'employeeslist', component: EmployeeListComponent},
-    {path: 'employeedetail', component: EmployeeDetailComponent},
-    {path: 'employeedetail/:id', component: ParticularEmployeeDetailComponent},
+    {path: 'employee-list', component: EmployeeListComponent},
+    {path: 'employee-detail', component: EmployeeDetailComponent},
+    {path: 'employee-list/:id', component: ParticularEmployeeDetailComponent},
     
     //If path doesn't exist
     {path: "**", component: PageNotFoundComponent}

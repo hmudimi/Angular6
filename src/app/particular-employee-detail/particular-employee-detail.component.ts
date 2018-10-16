@@ -31,17 +31,21 @@ export class ParticularEmployeeDetailComponent implements OnInit {
 
   goPrevious() {
     let previousId = this.employeeId - 1;
-    this.router.navigate(['/employeedetail', previousId])
+    console.log("Previous", previousId)
+    // this.router.navigate(['/employee-list', previousId])
+    this.router.navigate([previousId], {relativeTo: this.route});
   }
 
   goNext() {
     let nextId = this.employeeId + 1;
-    this.router.navigate(['/employeedetail', nextId])
+    // this.router.navigate(['/employee-list', nextId])
+    this.router.navigate([nextId], {relativeTo: this.route});
   }
 
   goToEmployeesList() {
     let selectedId = this.employeeId ? this.employeeId : null;
-    this.router.navigate(['employeeslist',{id: selectedId}])
+    // this.router.navigate(['employeeslist',{id: selectedId}])
+    this.router.navigate(['../', {id:selectedId}], {relativeTo: this.route});
   }
 
 }
