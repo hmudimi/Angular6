@@ -20,7 +20,7 @@ export class EmployeeListComponent implements OnInit {
   }
 
   onSelect(employee) {
-    this.router.navigate(['/particularEmployeeDetail', employee.id]);
+    this.router.navigate(['/employeedetail', employee.id]);
   }
 
 }

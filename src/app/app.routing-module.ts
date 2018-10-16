@@ -12,7 +12,7 @@ const routes: Routes = [
     //other paths
     {path: 'employeeslist', component: EmployeeListComponent},
     {path: 'employeedetail', component: EmployeeDetailComponent},
-    {path: 'particularEmployeeDetail/:id', component: ParticularEmployeeDetailComponent},
+    {path: 'employeedetail/:id', component: ParticularEmployeeDetailComponent},
     
     //If path doesn't exist
     {path: "**", component: PageNotFoundComponent}
